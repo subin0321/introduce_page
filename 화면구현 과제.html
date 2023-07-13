@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<htlm>
+    <head>
+        <title>자기소개 페이지</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+
+    <body>
+        <script>
+                document.addEventListener('mousemove', function(event) {
+                var x = event.clientX;
+                var y = event.clientY;
+
+                var lEye = document.getElementById('lEye');
+                var rEye = document.getElementById('rEye');
+
+                var lEyeX = x / window.innerWidth * 20 + '%';
+                var lEyeY = y / window.innerHeight * 20 + '%';
+
+                var rEyeX = x / window.innerWidth * 20 + '%';
+                var rEyeY = y / window.innerHeight * 20 + '%';
+
+                lEye.style.left = lEyeX;
+                lEye.style.top = lEyeY;
+
+                rEye.style.left = rEyeX;
+                rEye.style.top = rEyeY;
+                });
+
+        </script>
+
+
+
+      <div class="header">
+        <div id="logo">
+            <img src="./" alt="logo">
+        </div>
+        <div id="top_menu">
+                <a href="#">HOME</a>
+                <a href="#">NOTICE</a>
+                <a href="#">MAIN</a>
+            </div>
+        </div>
+
+        <div class="main_board">
+            <div class="person">
+                <img src="person.png" alt="Person Image" id="personImage">
+                <div class="eye" id="lEye"></div>
+                <div class="eye" id="rEye"></div>
+              </div>
+        </div>
+        <div class="link"> </div>
+
+
+
+        <div class="main">
+            <img src="./" alt="">
+            <h1> </h1>
+            <p> </p>
+        </div>
+
+
+
+        <div class="body">
+
+            <div class="grid">
+                <div class="container box1"> <!-- 클래스명 수정 -->
+                  <div class="thumbnail">
+                    <img src="thumbnail1.jpg" alt="Thumbnail 1">
+                  </div>
+                  <div class="caption">
+                    <div class="caption-text">썸네일 1에 대한 텍스트</div>
+                  </div>
+                </div>
+                <div class="container box2"> <!-- 클래스명 수정 -->
+                  <div class="thumbnail">
+                    <img src="thumbnail2.jpg" alt="Thumbnail 2">
+                  </div>
+                  <div class="caption">
+                    <div class="caption-text">썸네일 2에 대한 텍스트</div>
+                  </div>
+                </div>
+                <div class="container box3"> <!-- 클래스명 수정 -->
+                  <div class="thumbnail">
+                    <img src="thumbnail3.jpg" alt="Thumbnail 3">
+                  </div>
+                  <div class="caption">
+                    <div class="caption-text">썸네일 3에 대한 텍스트</div>
+                  </div>
+                </div>
+                <div class="container box4"> <!-- 클래스명 수정 -->
+                  <div class="thumbnail">
+                    <img src="thumbnail4.jpg" alt="Thumbnail 4">
+                  </div>
+                  <div class="caption">
+                    <div class="caption-text">썸네일 4에 대한 텍스트</div>
+                  </div>
+                </div>
+              </div>
+
+
+        
+        </div>
+
+        <div class="under">
+
+        </div> 
+
+       
+    </body>
+</htlm>

@@ -1,0 +1,95 @@
+.header {
+    background-color: #f2f2f2;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo img {
+    height: 40px;
+}
+
+#top_menu a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: font-size 0.3s, text-decoration 0.3s;
+}
+
+#top_menu a:hover {
+
+    text-decoration: underline;
+}
+
+
+
+.person {
+position: relative;
+}
+
+.eye {
+position: absolute;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+background-color: white;
+top: 50%;
+transform: translateY(-50%);
+transition: all 0.2s ease-in-out;
+}
+
+#lEye {
+left: 40%;
+}
+
+#rEye {
+right: 40%;
+}
+
+
+
+    
+.grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-gap: 20px;
+}
+
+.container {
+position: relative;
+width: 200px;
+height: 200px;
+overflow: hidden;
+border: 1px solid #ccc;
+transition: all 0.3s;
+}
+
+.container:hover {
+transform: scale(1.1);
+}
+
+.thumbnail img {
+width: 100%;
+height: auto;
+}
+
+.caption {
+background-color: rgba(0, 0, 0, 0.2);
+padding: 10px;
+}
+
+.caption-text {
+color: white;
+font-size: 14px;
+}
+
+/* 클래스명 수정 */
+.box1 {
+/* 스타일 추가 */
+}
+
+.box2 {
+/* 스타일 추가 */
+}
